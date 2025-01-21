@@ -7,13 +7,12 @@
   gap: 32px;
   border: 1px solid black;
   padding: 5;
-  margin: 5;
+  /* margin: 5; */
   font-weight: bold;
 }
 
 .container {
   height: 100vh;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +48,6 @@
   font-size: x-large;
   width: 60%;
   display: flex;
-  gap: 100;
   justify-content: space-between;
 }
 

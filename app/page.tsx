@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.nav}>
-        <p>Portfolio</p>
-        <a>Contact</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
       </div>
 
 
