@@ -22,8 +22,7 @@
   display: flex;
   justify-content: center;
   width: 60%;
-  gap: 40;
-  font-size: x-large;
+  /* font-size: x-large; */
 }
 
 .name {
@@ -53,5 +52,5 @@
 .bottomLink {
   display: flex;
   align-items: center;
-  gap: 5;
+  gap: 5px;
 }
