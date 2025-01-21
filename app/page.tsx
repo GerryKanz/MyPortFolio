@@ -23,7 +23,7 @@ export default function Home() {
               width={250}
               height={250}
               src='/portforlioImg.jpg'
-              alt="Img here"
+              alt="Gerald's Image"
             />
           </div>
         </div>
