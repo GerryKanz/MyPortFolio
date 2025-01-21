@@ -4,11 +4,12 @@ import { FaArrowCircleRight } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className={styles.container}>
       <div className={styles.nav}>
         <p>Portfolio</p>
         <a>Contact</a>
       </div>
+
 
       <div className={styles.introContainer}>
         <div className={styles.intro}>
@@ -16,6 +17,7 @@ export default function Home() {
             I enjoy problem solving and turning ideas into real, working solutions.
             <p className={styles.name}>Gerald Kanzara</p>
           </div>
+
           <div>
             <Image
               width={250}

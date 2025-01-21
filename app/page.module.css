@@ -11,6 +11,15 @@
   font-weight: bold;
 }
 
+.container {
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 0px 250px 0px;
+}
+
 .intro {
   display: flex;
   justify-content: center;
@@ -20,7 +29,7 @@
 }
 
 .name {
-  margin-top: 25;
+  padding-top: 25;
   text-align: center;
   font-weight: bold;
 }
@@ -28,7 +37,6 @@
 .introContainer {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
 }
 
 .bottomLinksContainer {
@@ -39,7 +47,6 @@
 
 .bottomLinks {
   font-size: x-large;
-  margin-top: 200;
   width: 60%;
   display: flex;
   gap: 100;
