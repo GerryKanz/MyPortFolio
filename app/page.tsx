@@ -1,95 +1,39 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { FaArrowCircleRight } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+      <div className={styles.nav}>
+        <p>Portfolio</p>
+        <a>Contact</a>
+      </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      <div className={styles.introContainer}>
+        <div className={styles.intro}>
+          <div>Computer Science graduate and a Front-end developer who loves building modern and user-friendly websites. I have experience working with React/React Native, Next.js, Typscript and other tools to create responsive and efficient web applications.
+            I enjoy problem solving and turning ideas into real, working solutions.
+            <p className={styles.name}>Gerald Kanzara</p>
+          </div>
+          <div>
             <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              width={250}
+              height={250}
+              src='/portforlioImg.jpg'
+              alt="Img here"
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      <div className={styles.bottomLinksContainer}>
+        <div className={styles.bottomLinks}>
+          <a href="#" className={styles.bottomLink}> Personal projects <FaArrowCircleRight /> </a>
+          <a href="#" className={styles.bottomLink}> About me <FaArrowCircleRight /></a>
+        </div>
+      </div>
+
     </div>
   );
 }
