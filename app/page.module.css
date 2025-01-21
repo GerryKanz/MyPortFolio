@@ -6,8 +6,7 @@
   flex-direction: row;
   gap: 32px;
   border: 1px solid black;
-  padding: 5;
-  /* margin: 5; */
+  padding: 5px;
   font-weight: bold;
 }
 
@@ -28,7 +27,7 @@
 }
 
 .name {
-  padding-top: 25;
+  padding-top: 25px;
   text-align: center;
   font-weight: bold;
 }
