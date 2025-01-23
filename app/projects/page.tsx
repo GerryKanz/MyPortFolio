@@ -5,6 +5,9 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 
 export default function Projects() {
     return <div>
+
+        <p className={styles.pageTitle}>Personal Projects</p>
+
         <div className={styles.project}>
 
             <div className={styles.projectImgContainer}>
@@ -20,7 +23,7 @@ export default function Projects() {
             <div>
 
                 <div >
-                    <p><span className={styles.descriptionTitle}>Description : </span> Nail salon booking app project built using React Native is an app that similates the booking process. It allpows users to create an account, make appointments and cancel appointments when needed </p>
+                    <p><span className={styles.descriptionTitle}>Description : </span> Nail salon booking app project built using React Native is an app that similates the booking process. It allows users to create an account, make appointments and cancel appointments when needed </p>
                 </div>
 
                 <div>
