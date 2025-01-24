@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className={styles.container}>
+      <p className={styles.pageTitle} style={{ alignSelf: 'center' }}>SoftWare Engineer</p>
 
       <div className={styles.introContainer}>
         <div className={styles.intro}>

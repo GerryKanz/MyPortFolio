@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import styles from '@/app/page.module.css'
 import { project } from '../types/Interfaces';
+// import { projectData } from './projectsData';
 
 export default function Project(props: project) {
     return (
@@ -14,7 +15,6 @@ export default function Project(props: project) {
                     alt='app Image'
                     width={200}
                     height={200}
-                    layout='cover'
                 />
             </div>
 
@@ -50,6 +50,23 @@ export default function Project(props: project) {
                             </div> :
                             null
                         }
+
+                        {props.projectLinks?.github ?
+                            <div className={styles.projectLinksIcons}>
+                                <Link style={{ display: 'flex', alignItems: 'center', gap: '3px' }} href={props.projectLinks?.github}>
+                                    <Image
+                                        width={25}
+                                        height={25}
+                                        src='/github-brands-solid.svg'
+                                        alt="Github"
+                                    />
+                                    <p>Github</p>
+                                </Link>
+
+                            </div> : null
+                        }
+
+
 
                     </div>
                 </div>
