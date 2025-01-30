@@ -1,12 +1,14 @@
 .nav {
+  background-color: black;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   gap: 32px;
-  margin-bottom: 6vh;
+  margin-bottom: 8vh;
   border: 1px solid black;
-  padding: 5px;
+  padding: 10px 20px 10px 20px;
   font-weight: bold;
+  color: white;
 }
 
 .container {
@@ -93,3 +95,24 @@
 }
 
 .projectDescription {}
+
+.embededVid {
+  position: absolute;
+  height: 350;
+  right: 25px;
+  top: 55px
+}
+
+.closeVid {
+  height: 30px;
+  background-color: #eeeeee;
+}
+
+.closeVid :only-child {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.vidFrame {}

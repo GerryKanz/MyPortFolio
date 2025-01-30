@@ -10,6 +10,11 @@ interface links {
     'youtubeLink'?: string
     'expoLink'?: string
     'github'?: string
+    'youtubeLinkEmbedded'?: string
+}
+
+export interface embededLink {
+    handleClick?: (vidClicked: () => string | undefined) => void;
 }
 
 export type projects = project[]

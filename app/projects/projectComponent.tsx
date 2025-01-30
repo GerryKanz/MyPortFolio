@@ -2,11 +2,16 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import styles from '@/app/page.module.css'
-import { project } from '../types/Interfaces';
-// import { projectData } from './projectsData';
+import { project, embededLink } from '../types/Interfaces';
 
-export default function Project(props: project) {
-    return (
+export default function Project({ handleClick, ...props }: project & embededLink) {
+
+    const vidClicked = () => {
+        return props.projectLinks?.youtubeLinkEmbedded
+    }
+
+    return (<div>
+
         <div className={styles.project}>
 
             <div className={styles.projectImgContainer}>
@@ -28,15 +33,22 @@ export default function Project(props: project) {
                     <p><span className={styles.descriptionTitle}>Technologies : </span>{props.technologies}</p>
                     <div className={styles.projectLinks}>
 
-                        {props.projectLinks?.youtubeLink ?
+                        {props.projectLinks?.youtubeLinkEmbedded ?
                             <div className={styles.projectLinksIcons}>
-                                <Link href={props.projectLinks.youtubeLink}>
+                                <Link onClick={() => {
+                                    if (handleClick) {
+                                        handleClick(vidClicked)
+                                    } else {
+                                        return null
+                                    }
+                                }} style={{ display: 'flex', alignItems: 'center', gap: '3px' }} href={'#'}>
                                     <Image
                                         width={25}
                                         height={25}
                                         src='/youtube-brands-solid.svg'
                                         alt="Youtube"
                                     />
+                                    <p>Youtube</p>
                                 </Link>
 
                             </div>
@@ -72,6 +84,7 @@ export default function Project(props: project) {
                 </div>
             </div>
         </div>
+    </div>
     )
 }
 
