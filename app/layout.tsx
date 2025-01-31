@@ -26,10 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-
-        <div className={styles.nav}>
-          <a href="#">Home</a>
-          <a href="#">Contact</a>
+        <div className={styles.navContainer}>
+          <div className={styles.nav}>
+            <div>
+              <a href="./">Home</a>
+              <a href="#">Contact</a></div>
+          </div>
         </div>
 
         {children}

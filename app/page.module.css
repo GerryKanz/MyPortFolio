@@ -1,4 +1,15 @@
+.navContainer {
+  margin-bottom: 100px;
+}
+
 .nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav :only-child {
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -12,24 +23,41 @@
 }
 
 .container {
-  height: 80vh;
+  height: 70vh;
   display: flex;
-  font-size: x-large;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 0px 0px 250px 0px;
+  justify-content: space-around
+}
+
+.homePageCard {
+  background-color: #ffffff;
+  padding: 10px
 }
 
 .intro {
   display: flex;
   justify-content: center;
-  width: 60%;
+  background-color: #ffffff;
+  padding: 20px;
+  gap: 5px;
+  width: 65%;
+  border-radius: 10px;
+}
+
+.intro :first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro :first-child :first-child {
+  font-size: larger;
 }
 
 .name {
-  padding-top: 15px;
   text-align: center;
   font-weight: bold;
+  font-size: x-large;
 }
 
 .introContainer {
@@ -40,11 +68,15 @@
 .bottomLinksContainer {
   display: flex;
   justify-content: center;
+  /* border: 1px solid white; */
 
 }
 
 .bottomLinks {
   width: 60%;
+  font-weight: bold;
+  font-size: larger;
+  color: #e8e6e6;
   display: flex;
   justify-content: space-between;
 }
@@ -56,20 +88,27 @@
 }
 
 .pageTitle {
+  color: #e8e6e6;
   font-size: xx-large;
   font-weight: bold;
   justify-self: center;
   margin-bottom: 50px;
 }
 
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15;
+}
+
 .project {
+  background: white;
   display: flex;
   gap: 100px;
   width: 90%;
   justify-self: center;
   margin-bottom: 10px;
   padding: 20px;
-  /* border: 1px solid black; */
   border-radius: 10px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
@@ -100,12 +139,17 @@
   position: absolute;
   height: 350;
   right: 25px;
-  top: 55px
+  top: 55px;
+  padding: 5px;
+  background-color: white;
+  height: auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
 }
 
 .closeVid {
-  height: 30px;
-  background-color: #eeeeee;
+  /* height: 3px; */
+  /* background-color: #eeeeee; */
 }
 
 .closeVid :only-child {

@@ -22,6 +22,7 @@ export default function Projects() {
 
 
     return <div>
+
         <p className={styles.pageTitle}>Personal Projects</p>
 
         {isVidClicked ?
@@ -32,7 +33,11 @@ export default function Projects() {
             </div>
             : null}
 
-        <Project {...projects[0]} handleClick={handleVidClicked} />
-        <Project {...projects[1]} />
+        <div className={styles.projectsContainer}>
+            {projects.map((project, index) => (
+                <Project key={index} {...project} handleClick={handleVidClicked} />
+            ))}
+        </div>
+
     </div >
 }
