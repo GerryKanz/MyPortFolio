@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import styles from "./page.module.css"
-// import { FaArrowCircleRight } from "react-icons/fa";
 import Link from "next/link";
 
 
