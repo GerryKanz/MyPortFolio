@@ -1,0 +1,25 @@
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15;
+    margin-top: 100px;
+}
+
+.embededVid {
+    position: absolute;
+    height: 350;
+    right: 25px;
+    top: 55px;
+    padding: 5px;
+    background-color: white;
+    height: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+
+.closeVid :only-child {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    margin: 5px;
+    border-radius: 4px;
+}

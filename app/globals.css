@@ -30,6 +30,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  color: #e8e6e6;
+  font-size: xx-large;
+  font-weight: bold;
+  justify-self: center;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

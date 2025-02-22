@@ -1,13 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { FaArrowCircleRight } from "react-icons/fa";
-import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <div>
-        <p className={styles.pageTitle} style={{ alignSelf: 'center' }}>SoftWare Engineer</p>
+        <h1>SoftWare Engineer</h1>
       </div>
       <div className={styles.container}>
         <div className={styles.introContainer}>
@@ -19,7 +17,7 @@ export default function Home() {
               <p className={styles.name}>Gerald Kanzara</p>
             </div>
 
-            <div>
+            <div className={styles.IntroImg}>
               <Image
                 width={250}
                 height={250}
@@ -29,16 +27,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className={styles.bottomLinksContainer}>
-          <div className={styles.bottomLinks}>
-            <Link href={'/projects'} className={styles.bottomLink}>Personal projects <FaArrowCircleRight /></Link>
-            <a href="#" className={styles.bottomLink}> About me <FaArrowCircleRight /></a>
-          </div>
-        </div>
-
       </div>
-
     </>
   );
 }

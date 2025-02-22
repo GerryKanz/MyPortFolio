@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import styles from "./page.module.css"
+// import { FaArrowCircleRight } from "react-icons/fa";
+import Link from "next/link";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,9 +32,14 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className={styles.navContainer}>
           <div className={styles.nav}>
-            <div>
-              <a href="./">Home</a>
-              <a href="#">Contact</a></div>
+            <div className={styles.navLinks}>
+              <a href="./">Home </a>
+
+              <div className={styles.bottomLinksContainer}>
+                <Link href={'/projects'} className={styles.bottomLink}>Portfolio Projects</Link>
+                <a href="/AboutMe" className={styles.bottomLink}> About me</a>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 .navContainer {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .nav {
@@ -9,29 +9,30 @@
   z-index: 1000;
 }
 
-.nav :only-child {
+.navLinks {
   background-color: black;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  gap: 32px;
-  margin-bottom: 8vh;
-  border: 1px solid black;
-  padding: 10px 20px 10px 20px;
+
+  padding: 20px 20px 20px 20px;
   font-weight: bold;
   color: white;
 }
 
+.contact {
+  color: white;
+}
+
 .container {
-  height: 70vh;
   display: flex;
   flex-direction: column;
+  margin-top: 5%;
   justify-content: space-around
 }
 
 .homePageCard {
   background-color: #ffffff;
-  padding: 10px
 }
 
 .intro {
@@ -67,96 +68,45 @@
 
 .bottomLinksContainer {
   display: flex;
-  justify-content: center;
-  /* border: 1px solid white; */
-
+  justify-content: space-between;
+  width: 50%;
 }
 
 .bottomLinks {
-  width: 60%;
   font-weight: bold;
-  font-size: larger;
+  font-size: large;
   color: #e8e6e6;
   display: flex;
-  justify-content: space-between;
+  gap: '20px';
 }
 
 .bottomLink {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 
-.pageTitle {
-  color: #e8e6e6;
-  font-size: xx-large;
-  font-weight: bold;
-  justify-self: center;
-  margin-bottom: 50px;
+@media (max-width: 640px) {
+
+  .navLinks {
+    font-size: medium;
+  }
+
+  .projectsContainer {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  .IntroImg {
+    border-radius: 50%;
+    display: none;
+  }
+
+  .introContainer {
+    width: 100%;
+  }
+
+  .intro {
+    font-size: medium;
+  }
 }
-
-.projectsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 15;
-}
-
-.project {
-  background: white;
-  display: flex;
-  gap: 100px;
-  width: 90%;
-  justify-self: center;
-  margin-bottom: 10px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.projectImgContainer {
-  width: 200px;
-
-}
-
-.descriptionTitle {
-  font-size: x-large;
-  font-weight: bold;
-}
-
-.projectLinksIcons {
-  margin: 0px 10px 50px 0px;
-}
-
-.projectLinks {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
-
-.projectDescription {}
-
-.embededVid {
-  position: absolute;
-  height: 350;
-  right: 25px;
-  top: 55px;
-  padding: 5px;
-  background-color: white;
-  height: auto;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 2px;
-}
-
-.closeVid {
-  /* height: 3px; */
-  /* background-color: #eeeeee; */
-}
-
-.closeVid :only-child {
-  background-color: rgb(62, 62, 62);
-  color: white;
-  margin: 5px;
-  border-radius: 4px;
-}
-
-.vidFrame {}
