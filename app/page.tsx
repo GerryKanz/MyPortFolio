@@ -1,9 +1,13 @@
 import Image from "next/image";
+import Head from "next/head";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <div>
         <h1>SoftWare Engineer</h1>
       </div>
