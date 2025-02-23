@@ -2,6 +2,17 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
+
+  const skillsIcons = [
+    '/html-5.png',
+    '/css-3.png',
+    '/js.png',
+    '/physics.png',
+    '/python.png',
+    '/github.png'
+
+  ]
+
   return (
     <>
       <div className="pageTitle">
@@ -27,6 +38,19 @@ export default function Home() {
               />
             </div>
           </div>
+        </div>
+        <div className={styles.skillsIcons}>
+          {skillsIcons.map((icon, index) => (
+
+            <Image
+              key={index}
+              width={30}
+              height={30}
+              src={icon}
+              alt={"Skill Icon"}
+              className={styles.SkillIcon}
+            />
+          ))}
         </div>
       </div>
     </>
