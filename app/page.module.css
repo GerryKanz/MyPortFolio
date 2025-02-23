@@ -69,27 +69,21 @@
 .bottomLinksContainer {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 55%;
 }
 
-.bottomLinks {
-  font-weight: bold;
-  font-size: large;
-  color: #e8e6e6;
-  display: flex;
-  gap: '20px';
-}
 
 .bottomLink {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 @media (max-width: 640px) {
 
+
   .navLinks {
-    font-size: medium;
+    font-size: small;
+    padding-right: 10px;
   }
 
   .projectsContainer {
@@ -98,7 +92,6 @@
   }
 
   .IntroImg {
-    border-radius: 50%;
     display: none;
   }
 

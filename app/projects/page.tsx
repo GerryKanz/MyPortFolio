@@ -22,7 +22,10 @@ export default function Projects() {
 
 
     return <div>
-        <h1>Personal Projects</h1>
+        <div className='pageTitle'>
+            <h1>Personal Projects</h1>
+        </div>
+
 
         {isVidClicked ?
             <div className={styles.embededVid}>

@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import styles from "./page.module.css"
 import Link from "next/link";
+import Image from "next/image";
 
 
 
@@ -32,11 +33,25 @@ export default function RootLayout({
         <div className={styles.navContainer}>
           <div className={styles.nav}>
             <div className={styles.navLinks}>
-              <a href="./">Home </a>
+              <div>
+                <a href="./">
+                  <Image
+                    width={50}
+                    height={50}
+                    src='/geraldkan.jpg'
+                    alt="Gerald's Image"
+                    className='homeImg'
+                  />
+                </a>
+                <div className="homeLinkTag">
+                  <a href="./">Home </a>
+                </div>
+
+              </div>
 
               <div className={styles.bottomLinksContainer}>
                 <Link href={'/projects'} className={styles.bottomLink}>Portfolio Projects</Link>
-                <a href="/AboutMe" className={styles.bottomLink}> About me</a>
+                <Link href="/AboutMe" className={styles.bottomLink}> About me</Link>
               </div>
             </div>
           </div>
