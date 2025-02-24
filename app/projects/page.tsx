@@ -4,10 +4,12 @@ import styles from '@/app/projects/page.module.css'
 import Project from './projectComponent'
 import { projects } from './projectsData';
 import { useState } from 'react';
-import { FaXmark } from "react-icons/fa6";
+import { FaXmark, FaArrowLeftLong } from "react-icons/fa6";
+import Link from 'next/link';
 
 
 export default function Projects() {
+
     const [isVidClicked, setVidClicked] = useState(false)
     const [embededVidLink, setEmbededVidLink] = useState<string | undefined>('')
 
@@ -22,6 +24,9 @@ export default function Projects() {
 
 
     return <div>
+
+        <Link href={'./'} className={styles.backArrow}><FaArrowLeftLong /></Link>
+
         <div className='pageTitle'>
             <h1>Personal Projects</h1>
         </div>

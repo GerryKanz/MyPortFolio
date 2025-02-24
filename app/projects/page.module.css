@@ -1,3 +1,7 @@
+.backArrow {
+    display: none;
+}
+
 .projectsContainer {
     display: flex;
     flex-direction: column;
@@ -22,4 +26,11 @@
     color: white;
     margin: 5px;
     border-radius: 4px;
+}
+
+@media (max-width: 640px) {
+    .projectsContainer {
+        margin-top: 30px;
+    }
+
 }

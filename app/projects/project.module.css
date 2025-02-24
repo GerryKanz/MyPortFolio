@@ -1,8 +1,8 @@
 .project {
     background: white;
-    width: 80%;
+    /* width: 100%; */
     justify-self: center;
-    margin-bottom: 20px;
+    margin: 0px 5% 10px 5%;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
@@ -13,6 +13,7 @@
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
+    color: #003366;
 }
 
 .projectDetail {
@@ -21,13 +22,18 @@
 }
 
 .projectImgContainer {
-    width: 200px;
-
+    display: flex;
+    justify-content: center;
 }
 
-.descriptionTitle {
-    font-size: x-large;
-    font-weight: bold;
+.description {
+    margin-bottom: 10px;
+    color: #003366
+}
+
+.descriptionDetail {
+    font-weight: normal;
+    color: black;
 }
 
 .projectLinksIcons {
@@ -38,4 +44,21 @@
     display: flex;
     align-items: center;
     gap: 50px;
+}
+
+@media (max-width: 640px) {
+    .backArrow {
+        display: block;
+    }
+
+    .projectDetail {
+        flex-direction: column;
+        font-size: medium;
+        gap: 0;
+    }
+
+    .projectLinks {
+        gap: 5px;
+        font-size: medium;
+    }
 }

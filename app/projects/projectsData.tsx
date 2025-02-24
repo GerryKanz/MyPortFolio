@@ -1,6 +1,6 @@
 export const projects = [
     {
-        name: 'Nail Salon Booking App',
+        name: 'Nail Salon Booking App (Beta)',
 
         imagePath: '/nailsapp.png',
         discription: 'Nail salon booking app project built using React Native is an app that similates the booking process. It allows users to create an account, make appointments and cancel appointments when needed',
@@ -15,7 +15,7 @@ export const projects = [
     },
 
     {
-        name: 'Weather App',
+        name: 'Weather App (Beta)',
 
         imagePath: '/weatheapp.png',
         discription: 'Nail salon booking app project built using React Native is an app that similates the booking process. It allows users to create an account, make appointments and cancel appointments when needed',
@@ -27,7 +27,7 @@ export const projects = [
         }
     },
     {
-        name: 'Nail Salon Booking App',
+        name: 'Nail Salon Booking App (Beta)',
 
         imagePath: '/nailsapp.png',
         discription: 'Nail salon booking app project built using React Native is an app that similates the booking process. It allows users to create an account, make appointments and cancel appointments when needed',
