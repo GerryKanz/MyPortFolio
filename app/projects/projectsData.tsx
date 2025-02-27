@@ -27,6 +27,20 @@ export const projects = [
         }
     },
     {
+        name: 'Food App (Beta)',
+
+        imagePath: '/foodAppImg.png',
+        discription: 'Nail salon booking app project built using React Native is an app that similates the booking process. It allows users to create an account, make appointments and cancel appointments when needed',
+        technologies: 'Javascript, HTML, CSS and ReactNative',
+        projectLinks: {
+            youtubeLink: 'https://youtu.be/iBS_5fEgYm8',
+            youtubeLinkEmbedded: "https://www.youtube.com/embed/iBS_5fEgYm8?si=s8etBdnBBvXAroCI&amp;start=12",
+            expoLink: 'https://expo.dev/preview/update?message=v1.0%20Beta&updateRuntimeVersion=1.0.0&createdAt=2025-02-25T13%3A11%3A05.322Z&slug=exp&projectId=be732391-d631-4d40-a1d2-7a5fe7a53951&group=590169eb-988a-4095-93c2-5656361999c2',
+            github: 'https://github.com/GerryKanz/nailSalon'
+        }
+
+    },
+    {
         name: 'Nail Salon Booking App (Beta)',
 
         imagePath: '/nailsapp.png',
