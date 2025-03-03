@@ -41,6 +41,20 @@ export const projects = [
 
     },
     {
+        name: 'Calculator (Beta)',
+
+        imagePath: '/calculatorApp.png',
+        discription: 'In this project I used a convolutional neural network to build a model which takes images as inputs and through its deep convolutional layers extracts the features of this image and classify it as one of the classes or species through the multi-class classification system of this model.',
+        technologies: 'Python, TensorFlow Keras Library, MatplotLib, Pandas and Numpy',
+        projectLinks: {
+            youtubeLink: 'https://youtu.be/iBS_5fEgYm8',
+            youtubeLinkEmbedded: "https://www.youtube.com/embed/iBS_5fEgYm8?si=s8etBdnBBvXAroCI&amp;start=12",
+            expoLink: '',
+            github: 'https://github.com/GerryKanz/Final-project-image-classification-model/blob/main/final_project_ML.ipynb'
+        }
+
+    },
+    {
         name: 'Bird Classication Model Deep Neural Network (Beta)',
 
         imagePath: '/BirdClassicationModel.png',
