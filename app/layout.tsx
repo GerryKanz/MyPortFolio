@@ -51,7 +51,7 @@ export default function RootLayout({
 
               <div className={styles.bottomLinksContainer}>
                 <Link href={'/projects'} className={styles.bottomLink}>Portfolio Projects</Link>
-                <Link href="/AboutMe" className={styles.bottomLink}> About me</Link>
+                {/* <Link href="/AboutMe" className={styles.bottomLink}> About me</Link> */}
               </div>
             </div>
           </div>

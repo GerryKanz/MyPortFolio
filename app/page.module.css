@@ -68,8 +68,9 @@
 
 .bottomLinksContainer {
   display: flex;
-  justify-content: space-between;
-  width: 55%;
+  justify-content: end;
+  margin-right: 10px;
+  /* width: 55%; */
 }
 
 
