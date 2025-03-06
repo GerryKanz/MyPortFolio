@@ -21,4 +21,4 @@ export interface embededLink {
 
 export type projects = project[]
 
-export type Locale = (typeof routing.locales)
+export type Locale = (typeof routing.defaultLocale)
