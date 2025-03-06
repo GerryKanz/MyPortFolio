@@ -1,3 +1,5 @@
+import { routing } from "@/i18n/routing"
+
 export interface project {
     'name': string,
     'imagePath': string,
@@ -18,3 +20,5 @@ export interface embededLink {
 }
 
 export type projects = project[]
+
+export type Locale = (typeof routing.locales)

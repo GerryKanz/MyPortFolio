@@ -4,7 +4,10 @@ import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { project, embededLink } from '../types/Interfaces';
 import styles from './project.module.css'
 
+import { useTranslations } from 'next-intl';
+
 export default function Project({ handleClick, ...props }: project & embededLink) {
+    const t = useTranslations("ProjectsPage")
 
     const vidClicked = () => {
         return props.projectLinks?.youtubeLinkEmbedded
@@ -31,11 +34,11 @@ export default function Project({ handleClick, ...props }: project & embededLink
                     <div>
 
                         <div >
-                            <h3 className={styles.description}>Description : <span className={styles.descriptionDetail}>{props.discription} </span> </h3>
+                            <h3 className={styles.description}>{t("description")} : <span className={styles.descriptionDetail}>{props.discription} </span> </h3>
                         </div>
 
                         <div>
-                            <h3 className={styles.description}>Technologies :  <span className={styles.descriptionDetail}>{props.technologies}</span></h3>
+                            <h3 className={styles.description}>{t("technologies")} :  <span className={styles.descriptionDetail}>{props.technologies}</span></h3>
                             <div className={styles.projectLinks}>
 
                                 {props.projectLinks?.youtubeLinkEmbedded ?

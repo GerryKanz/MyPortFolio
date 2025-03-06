@@ -1,7 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useTranslations } from 'next-intl';
+// import { Link } from '@/i18n/navigation';
 
 export default function Home() {
+
+  const t = useTranslations('HomePage');
 
   const skillsIcons = [
     '/html-5.png',
@@ -16,7 +20,7 @@ export default function Home() {
   return (
     <>
       <div className="pageTitle">
-        <h1>SoftWare Engineer</h1>
+        <h1>{t('title')}</h1>
       </div>
 
 
@@ -24,8 +28,7 @@ export default function Home() {
         <div className={styles.introContainer}>
           <div className={styles.intro}>
             <div>
-              <p>I enjoy problem solving and turning ideas into real, working solutions.
-              </p>
+              <p>{t('intro')}</p>
               <p className={styles.name}>Gerald Kanzara</p>
             </div>
 

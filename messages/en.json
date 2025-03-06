@@ -1,0 +1,20 @@
+{
+    "HomePage": {
+        "title": "Software Engineer",
+        "intro": "I enjoy problem solving and turning ideas into real, working solutions."
+    },
+    "ProjectsPage": {
+        "title": "Personal Projects",
+        "nailSalonDiscript": "Nail salon booking app project built using React Native is an app that similates the booking process. It allows users to create an account, make appointments and cancel appointments when needed",
+        "calculator": "This project is a calculator app with the functionality that help solve simple math. Its inspired by widgets found on smartphones. In this project I was more focused on responsive design",
+        "description": "Descrition",
+        "technologies": "Technologies"
+    },
+    "NavBarText": {
+        "projects": "Personal Projects",
+        "home": "Home"
+    },
+    "LanguageSwitcher": {
+        "language": "language"
+    }
+}

@@ -43,6 +43,8 @@
   gap: 5px;
   width: 65%;
   border-radius: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 .intro :first-child {
@@ -68,9 +70,9 @@
 
 .bottomLinksContainer {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   margin-right: 10px;
-  /* width: 55%; */
+  width: 20%;
 }
 
 

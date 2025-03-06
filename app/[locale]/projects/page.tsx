@@ -1,14 +1,18 @@
 'use client'
 
-import styles from '@/app/projects/page.module.css'
+import styles from '@/app/[locale]/projects/page.module.css'
 import Project from './projectComponent'
-import { projects } from './projectsData';
+// import { projects } from './projectsData';
+import ProjectsData from './projectsData';
 import { useState } from 'react';
 import { FaXmark, FaArrowLeftLong } from "react-icons/fa6";
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+
 
 
 export default function Projects() {
+    const t = useTranslations("ProjectsPage")
 
     const [isVidClicked, setVidClicked] = useState(false)
     const [embededVidLink, setEmbededVidLink] = useState<string | undefined>('')
@@ -28,7 +32,7 @@ export default function Projects() {
         <Link href={'./'} className={styles.backArrow}><FaArrowLeftLong /></Link>
 
         <div className='pageTitle'>
-            <h1>Personal Projects</h1>
+            <h1>{t('title')}</h1>
         </div>
 
 
@@ -41,7 +45,7 @@ export default function Projects() {
             : null}
 
         <div className={styles.projectsContainer}>
-            {projects.map((project, index) => (
+            {ProjectsData().map((project, index) => (
                 <Project key={index} {...project} handleClick={handleVidClicked} />
             ))}
         </div>
