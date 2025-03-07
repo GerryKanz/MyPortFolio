@@ -1,20 +1,22 @@
 
 "use client"
 import { CiGlobe } from "react-icons/ci";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { useParams } from 'next/navigation';
-import { useTranslations } from "next-intl";
+import styles from "@/app/[locale]/languageSwitcher.module.css"
+
 
 
 
 export default function LangSwitcher() {
     const [isClicked, setIsClicked] = useState(false)
+
+    const [language, setLanguage] = useState<string>('en')
     const pathname = usePathname();
     const router = useRouter();
     const params = useParams();
     const languages = ['en', 'jp']
-    const t = useTranslations("LanguageSwitcher")
 
     // Update locale in URL when it changes
     const handleOnClick = (lang: string) => {
@@ -25,21 +27,24 @@ export default function LangSwitcher() {
             { pathname, params },
             { locale: lang }
         )
-        setIsClicked(false)
+        setLanguage(lang)
     }
 
-    return (
-        <div>
-            <CiGlobe />
-            <div>
-                <div onClick={() => setIsClicked(true)}>
-                    <p>{t('language')}</p>
-                </div>
+    useEffect(() => {
+        setIsClicked(false)
+    }, [language])
 
-                {isClicked ? languages.map((lang, index) => (
-                    <div onClick={() => handleOnClick(lang)} key={index}>{lang}</div>
-                )) : null}
+    return (
+        <>
+            <div className={styles.language}>
+                <CiGlobe className={styles.globeIcon} />
+                <div className={styles.selectContainer}>
+                    {languages.map((lang, index) => (
+                        <p className={styles.selectOption} onClick={() => handleOnClick(lang)} key={index}>{lang}</p>
+                    ))}
+                </div>
             </div>
-        </div>
+
+        </>
     );
 }

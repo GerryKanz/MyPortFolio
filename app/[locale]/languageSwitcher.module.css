@@ -1,0 +1,36 @@
+.container {
+    /* display: flex; */
+
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.globeIcon {
+    font-size: larger;
+}
+
+.selectContainer {
+    display: flex;
+    gap: 2px;
+}
+
+.selectOption {
+    background-color: aliceblue;
+    color: black;
+    width: 30px;
+    text-align: center;
+}
+
+.selectOption:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.selectOption:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
