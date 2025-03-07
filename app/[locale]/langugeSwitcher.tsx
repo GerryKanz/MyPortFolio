@@ -1,18 +1,12 @@
 
 "use client"
 import { CiGlobe } from "react-icons/ci";
-import { useEffect, useState } from "react";
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { useParams } from 'next/navigation';
 import styles from "@/app/[locale]/languageSwitcher.module.css"
 
-
-
-
 export default function LangSwitcher() {
-    const [isClicked, setIsClicked] = useState(false)
 
-    const [language, setLanguage] = useState<string>('en')
     const pathname = usePathname();
     const router = useRouter();
     const params = useParams();
@@ -27,12 +21,8 @@ export default function LangSwitcher() {
             { pathname, params },
             { locale: lang }
         )
-        setLanguage(lang)
-    }
 
-    useEffect(() => {
-        setIsClicked(false)
-    }, [language])
+    }
 
     return (
         <>
