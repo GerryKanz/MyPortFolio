@@ -20,7 +20,7 @@ export default function NavBar() {
                         />
                     </a>
                     <div className="homeLinkTag">
-                        <a href="./">{t("home")}</a>
+                        <Link href="/">{t("home")}</Link>
                     </div>
 
                 </div>

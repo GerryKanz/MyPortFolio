@@ -12,6 +12,10 @@ export const routing = defineRouting({
             en: '/projects',
             jp: '/プロジェクト'
         },
+        '/': {
+            en: '/home',
+            jp: '/ホム'
+        }
 
     }
 });

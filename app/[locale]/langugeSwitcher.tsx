@@ -1,14 +1,13 @@
 
 "use client"
-import { CiGlobe } from "react-icons/ci";
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { useParams } from 'next/navigation';
 import styles from "@/app/[locale]/languageSwitcher.module.css"
+import { CiGlobe } from "react-icons/ci";
 
 export default function LangSwitcher() {
-
-    const pathname = usePathname();
     const router = useRouter();
+    const pathname = usePathname();
     const params = useParams();
     const languages = ['en', 'jp']
 

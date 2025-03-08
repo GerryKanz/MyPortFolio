@@ -10,9 +10,15 @@
 .projectName {
     font-size: larger;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     text-align: center;
     color: #003366;
+}
+
+.projectName h4 {
+    display: inline-block;
+    border-bottom: 1px solid rgb(191, 191, 191);
+    padding-bottom: 4px;
 }
 
 .projectDetail {
@@ -44,6 +50,26 @@
     align-items: center;
     gap: 50px;
 }
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 3px
+}
+
+.linkArrow {
+    font-size: x-large;
+    transform: rotate(-45deg);
+    display: inline-block;
+    color: green;
+}
+
+.projectLinks :Link {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+}
+
 
 @media (max-width: 640px) {
     .backArrow {

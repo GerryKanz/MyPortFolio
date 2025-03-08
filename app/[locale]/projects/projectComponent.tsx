@@ -18,7 +18,10 @@ export default function Project({ handleClick, ...props }: project & embededLink
 
             <div className={styles.project}>
                 <div className={styles.projectName}>
-                    <h4>{props.name}</h4>
+                    <div>
+                        <h4>{props.name}</h4>
+                    </div>
+
                 </div>
                 <div className={styles.projectDetail}>
 
@@ -64,8 +67,9 @@ export default function Project({ handleClick, ...props }: project & embededLink
 
                                 {props.projectLinks?.expoLink ?
                                     <div className={styles.projectLinksIcons}>
-                                        <Link href={props.projectLinks.expoLink}>
-                                            View project in Expo <span style={{ fontSize: 'x-large', fontWeight: 'bold', transform: 'rotate(-45deg)', display: 'inline-block' }}><HiOutlineArrowSmRight /></span>
+                                        <Link className={styles.link} href={props.projectLinks.expoLink}>
+                                            <p> View the project live</p>
+                                            <span className={styles.linkArrow}><HiOutlineArrowSmRight /></span>
                                         </Link>
                                     </div> :
                                     null

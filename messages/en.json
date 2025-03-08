@@ -5,8 +5,11 @@
     },
     "ProjectsPage": {
         "title": "Personal Projects",
-        "nailSalonDiscript": "Nail salon booking app project built using React Native is an app that similates the booking process. It allows users to create an account, make appointments and cancel appointments when needed",
+        "nailSalonDescript": "This is a mobile application built with React Native. It streamlines the appointment scheduling process for a nail salon. Users can create an account, book appointments, manage their bookings, and cancel when necessary. It is built with a focus on user experience and modern UI design",
         "calculator": "This project is a calculator app with the functionality that help solve simple math. Its inspired by widgets found on smartphones. In this project I was more focused on responsive design",
+        "weatherAppDescript": "I have created a weather app that retrieves real-time weather data from the Weather API. The app allows users to search for any city or country of their choice and displays detailed weather information, including temperature, humidity, wind speed, and weather conditions. The app features a clean and user-friendly interface, making it easy to enter a location and quickly view the weather forecast. The data is fetched dynamically using API calls, ensuring up-to-date information.",
+        "birdClassificationDescript": "In this project I used a convolutional neural network to build a model which takes images as inputs and through its deep convolutional layers extracts the features of this image and classify it as one of the classes or species through the multi-class classification system of this model.",
+        "foodAppDescript": "The Food App is a small project built with React Native in Expo. It simulates the user experience of selecting a restaurant and viewing its menu. The app provides a simple and intuitive interface for browsing restaurant options and exploring available dishes",
         "description": "Descrition",
         "technologies": "Technologies"
     },
