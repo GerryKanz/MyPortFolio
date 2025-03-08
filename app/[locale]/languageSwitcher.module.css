@@ -9,6 +9,14 @@
     gap: 5px;
 }
 
+/* .language *:first-child {
+    transition: 0.5s ease-in-out;
+}
+
+.language:hover>*:first-child {
+    transform: rotate(90deg);
+} */
+
 .globeIcon {
     font-size: larger;
 }
@@ -23,6 +31,12 @@
     color: black;
     width: 30px;
     text-align: center;
+    transition: 0.4s ease;
+}
+
+.selectOption:hover {
+    background-color: rgb(238, 189, 99);
+    cursor: pointer;
 }
 
 .selectOption:first-child {

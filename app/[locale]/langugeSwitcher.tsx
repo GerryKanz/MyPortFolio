@@ -28,6 +28,7 @@ export default function LangSwitcher() {
         <>
             <div className={styles.language}>
                 <CiGlobe className={styles.globeIcon} />
+
                 <div className={styles.selectContainer}>
                     {languages.map((lang, index) => (
                         <p className={styles.selectOption} onClick={() => handleOnClick(lang)} key={index}>{lang}</p>
