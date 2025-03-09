@@ -43,6 +43,10 @@
 
 .projectLinksIcons {
     margin: 40px 10px 50px 0px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.4s ease
 }
 
 .projectLinks {
@@ -64,11 +68,7 @@
     color: green;
 }
 
-.projectLinks :Link {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 5px;
-}
+
 
 
 @media (max-width: 640px) {

@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { FaXmark, FaArrowLeftLong } from "react-icons/fa6";
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import useViewportWidth from './utilities/viewPort';
 
 
 
@@ -16,6 +17,7 @@ export default function Projects() {
 
     const [isVidClicked, setVidClicked] = useState(false)
     const [embededVidLink, setEmbededVidLink] = useState<string | undefined>('')
+    const viewportWidth = useViewportWidth()
 
     const handleVidClicked = (vidClicked: () => string | undefined) => {
         setVidClicked(true)
@@ -31,7 +33,7 @@ export default function Projects() {
 
         <Link href={'./'} className={styles.backArrow}><FaArrowLeftLong /></Link>
 
-        <div className='pageTitle'>
+        <div className={'pageTitle'}>
             <h1>{t('title')}</h1>
         </div>
 
@@ -39,8 +41,12 @@ export default function Projects() {
         {isVidClicked ?
             <div className={styles.embededVid}>
                 <div className={styles.closeVid}><FaXmark onClick={handleVidClosed} /></div>
+                {viewportWidth < 700 ?
 
-                <iframe width="560" height="315" src={embededVidLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe width="340" height="200" src={embededVidLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> :
+
+                    <iframe width="560" height="315" src={embededVidLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                }
             </div>
             : null}
 
