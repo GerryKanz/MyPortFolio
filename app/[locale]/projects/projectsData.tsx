@@ -23,7 +23,7 @@ export default function ProjectsData() {
         {
             name: 'Portfolio site',
 
-            imagePath: '/Portfoliosite.png',
+            imagePath: '/portfoliosite.png',
             discription: t("portfolioAppDescript"),
             technologies: 'NextJs (React), Typescript, CSS',
             projectLinks: {
