@@ -4,6 +4,7 @@ export default function ProjectsData() {
     const t = useTranslations('ProjectsPage')
 
     const projects = [
+
         {
             name: 'Nail Salon Booking App (Beta)',
 
@@ -15,6 +16,18 @@ export default function ProjectsData() {
                 youtubeLinkEmbedded: "https://www.youtube.com/embed/iBS_5fEgYm8?si=s8etBdnBBvXAroCI&amp;start=12",
                 expoLink: 'https://expo.dev/preview/update?message=v1.0.3%20Beta&updateRuntimeVersion=1.0.0&createdAt=2025-03-03T09%3A30%3A00.895Z&slug=exp&projectId=6f5a2d47-8e58-4c17-990b-50b1bb6214f5&group=7a96b647-69b3-43cf-a307-416a135fef2f',
                 github: 'https://github.com/GerryKanz/nailSalon'
+            }
+
+        },
+
+        {
+            name: 'Portfolio site',
+
+            imagePath: '/Portfoliosite.png',
+            discription: t("portfolioAppDescript"),
+            technologies: 'NextJs (React), Typescript, CSS',
+            projectLinks: {
+                github: 'https://github.com/GerryKanz/MyPortFolio'
             }
 
         },
