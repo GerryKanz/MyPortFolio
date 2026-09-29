@@ -1,22 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { HiOutlineArrowSmRight } from "react-icons/hi";
-import { project, embededLink } from '../types/Interfaces';
+import { project } from '../types/Interfaces';
 import styles from './project.module.css'
+import VideoEmbed from './VideoEmbed'
 
 import { useTranslations } from 'next-intl';
 
-export default function Project({ handleClick, ...props }: project & embededLink) {
+export default function Project({ id, ...props }: project & { id?: string }) {
     const t = useTranslations("ProjectsPage")
 
-    const vidClicked = () => {
-        return props.projectLinks?.youtubeLinkEmbedded
-    }
+    const hasYoutubeEmbed = !!props.projectLinks?.youtubeLinkEmbedded
+    const hasVideoFile = !hasYoutubeEmbed && !!props.projectLinks?.videoFile
 
     return (
         <div className={styles.projectContainer}>
 
-            <div className={styles.project}>
+            <div id={id} className={styles.project}>
                 <div className={styles.projectName}>
                     <div>
                         <h4>{props.name}</h4>
@@ -28,7 +28,7 @@ export default function Project({ handleClick, ...props }: project & embededLink
                     <div className={styles.projectImgContainer}>
                         <Image
                             src={props.imagePath}
-                            alt='app Image'
+                            alt={`${props.name} screenshot`}
                             width={200}
                             height={200}
                         />
@@ -46,20 +46,14 @@ export default function Project({ handleClick, ...props }: project & embededLink
 
                                 {props.projectLinks?.youtubeLinkEmbedded ?
                                     <div className={styles.projectLinksIcons}>
-                                        <Link onClick={() => {
-                                            if (handleClick) {
-                                                handleClick(vidClicked)
-                                            } else {
-                                                return null
-                                            }
-                                        }} style={{ display: 'flex', alignItems: 'center', gap: '3px' }} href={'#'}>
+                                        <Link style={{ display: 'flex', alignItems: 'center', gap: '3px' }} href={props.projectLinks.youtubeLink ?? props.projectLinks.youtubeLinkEmbedded}>
                                             <Image
                                                 width={25}
                                                 height={25}
                                                 src='/youtube-brands-solid.svg'
                                                 alt="Youtube"
                                             />
-                                            <p>Youtube</p>
+                                            <p>{t("youtube")}</p>
                                         </Link>
 
                                     </div>
@@ -68,7 +62,7 @@ export default function Project({ handleClick, ...props }: project & embededLink
                                 {props.projectLinks?.expoLink ?
                                     <div className={styles.projectLinksIcons}>
                                         <Link className={styles.link} href={props.projectLinks.expoLink}>
-                                            <p> View the project live</p>
+                                            <p>{t("viewLive")}</p>
                                             <span className={styles.linkArrow}><HiOutlineArrowSmRight /></span>
                                         </Link>
                                     </div> :
@@ -84,7 +78,7 @@ export default function Project({ handleClick, ...props }: project & embededLink
                                                 src='/github-brands-solid.svg'
                                                 alt="Github"
                                             />
-                                            <p>Github</p>
+                                            <p>{t("github")}</p>
                                         </Link>
 
                                     </div> : null
@@ -97,8 +91,28 @@ export default function Project({ handleClick, ...props }: project & embededLink
 
                     </div>
                 </div>
+
+                {hasYoutubeEmbed ?
+                    <div className={styles.embedContainer}>
+                        <h3 className={styles.embedHeading}>{t("videoDemoLabel")}</h3>
+                        <VideoEmbed
+                            embedUrl={props.projectLinks!.youtubeLinkEmbedded!}
+                            title={`${props.name} demo video`}
+                        />
+                    </div>
+                    : hasVideoFile ?
+                        <div className={styles.embedContainer}>
+                            <h3 className={styles.embedHeading}>{t("videoDemoLabel")}</h3>
+                            <video
+                                controls
+                                className={styles.selfHostedVideo}
+                                src={props.projectLinks!.videoFile}
+                            >
+                                {`${props.name} demo video`}
+                            </video>
+                        </div>
+                        : null}
             </div>
         </div>
     )
 }
-

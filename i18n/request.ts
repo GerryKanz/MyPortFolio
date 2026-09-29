@@ -1,6 +1,5 @@
 import { getRequestConfig } from 'next-intl/server';
 import { routing } from './routing';
-import { console } from 'inspector';
 
 export default getRequestConfig(async ({ requestLocale }) => {
     // This typically corresponds to the `[locale]` segment
@@ -9,7 +8,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
     // Ensure that a valid locale is used
     if (!locale || !routing.locales.includes(locale as "en" | "jp")) {
         locale = routing.defaultLocale;
-        console.log(locale)
     }
 
     return {

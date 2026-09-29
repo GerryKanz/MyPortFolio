@@ -7,10 +7,10 @@ import LangSwitcher from "./langugeSwitcher"
 export default function NavBar() {
     const t = useTranslations("NavBarText")
     return (<div className={styles.navContainer}>
-        <div className={styles.nav}>
+        <nav className={styles.nav} aria-label="Main navigation">
             <div className={styles.navLinks}>
                 <div>
-                    <a href="./">
+                    <Link href="/">
                         <Image
                             width={50}
                             height={50}
@@ -18,7 +18,7 @@ export default function NavBar() {
                             alt="Gerald's Image"
                             className='homeImg'
                         />
-                    </a>
+                    </Link>
                     <div className="homeLinkTag">
                         <Link href="/">{t("home")}</Link>
                     </div>
@@ -26,11 +26,13 @@ export default function NavBar() {
                 </div>
 
                 <div className={styles.bottomLinksContainer}>
+                    <Link href={'/about'} className={styles.bottomLink}>{t("about")}</Link>
                     <Link href={'/projects'} className={styles.bottomLink}>{t("projects")}</Link>
+                    <Link href={'/contact'} className={styles.bottomLink}>{t("contact")}</Link>
                     <LangSwitcher />
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
     )
 }

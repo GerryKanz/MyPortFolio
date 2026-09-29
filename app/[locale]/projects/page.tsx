@@ -1,59 +1,39 @@
-'use client'
-
 import styles from '@/app/[locale]/projects/page.module.css'
 import Project from './projectComponent'
-// import { projects } from './projectsData';
 import ProjectsData from './projectsData';
-import { useState } from 'react';
-import { FaXmark, FaArrowLeftLong } from "react-icons/fa6";
-import Link from 'next/link';
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { Link } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';
-import useViewportWidth from './utilities/viewPort';
 
 
 
 export default function Projects() {
     const t = useTranslations("ProjectsPage")
 
-    const [isVidClicked, setVidClicked] = useState(false)
-    const [embededVidLink, setEmbededVidLink] = useState<string | undefined>('')
-    const viewportWidth = useViewportWidth()
-
-    const handleVidClicked = (vidClicked: () => string | undefined) => {
-        setVidClicked(true)
-        setEmbededVidLink(vidClicked())
-    }
-
-    const handleVidClosed = () => {
-        setVidClicked(false)
-    }
-
+    const projects = ProjectsData()
 
     return <div>
 
-        <Link href={'./'} className={styles.backArrow}><FaArrowLeftLong /></Link>
+        <Link href={'/'} className={styles.backArrow}><FaArrowLeftLong /></Link>
 
         <div className={'pageTitle'}>
             <h1>{t('title')}</h1>
         </div>
 
+        <div className={styles.pageLayout}>
+            <nav className={styles.sidebar} aria-label={t('title')}>
+                {projects.map((project, index) => (
+                    <a key={index} className={styles.sidebarLink} href={`#project-${index}`}>
+                        {project.name}
+                    </a>
+                ))}
+            </nav>
 
-        {isVidClicked ?
-            <div className={styles.embededVid}>
-                <div className={styles.closeVid}><FaXmark onClick={handleVidClosed} /></div>
-                {viewportWidth < 700 ?
-
-                    <iframe width="340" height="200" src={embededVidLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> :
-
-                    <iframe width="560" height="315" src={embededVidLink} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                }
+            <div className={styles.projectsContainer}>
+                {projects.map((project, index) => (
+                    <Project key={index} id={`project-${index}`} {...project} />
+                ))}
             </div>
-            : null}
-
-        <div className={styles.projectsContainer}>
-            {ProjectsData().map((project, index) => (
-                <Project key={index} {...project} handleClick={handleVidClicked} />
-            ))}
         </div>
 
     </div >

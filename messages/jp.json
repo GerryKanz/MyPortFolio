@@ -1,7 +1,13 @@
 {
+    "Metadata": {
+        "title": "ジェラルド・カンザラ — ソフトウェアエンジニア",
+        "description": "問題解決を楽しみ、アイデアを実際に機能するソリューションに変えるソフトウェアエンジニア、ジェラルド・カンザラのポートフォリオです。"
+    },
     "HomePage": {
         "title": "ソフトウェアエンジニア",
-        "intro": "問題解決を楽しみ、アイデアを実際に機能するソリューションに変えることが好きです。"
+        "intro": "Pythonを中心に、JavaScript、TypeScript、React、React Nativeを用いた開発を学び、データ分析やAI・機械学習にも取り組んでいます。新しい技術を学ぶことが好きで、英語講師として培ったコミュニケーション力も活かしながら、エンジニアとして成長していきたいと考えています。",
+        "metaTitle": "ホーム",
+        "metaDescription": "ジェラルド・カンザラのポートフォリオのホームページ — ウェブおよびモバイル開発を専門とするソフトウェアエンジニア。"
     },
     "ProjectsPage": {
         "title": "個人プロジェクト",
@@ -12,13 +18,53 @@
         "foodAppDescript": "このフードアプリは、Expo 上の React Native で構築された小規模なプロジェクトです。ユーザーが レストランを選択し、そのレストランのメニューを閲覧する 体験をシミュレートします。シンプルで直感的なインターフェースを提供し、飲食店の選択や料理の確認がスムーズに行えます。",
         "portfolioAppDescript": "こちらは、現在ご覧いただいているウェブサイトです。最新のウェブ技術を活用して構築し、スムーズで快適なユーザー体験を提供できるようにしました。デスクトップ、ノートパソコン、タブレット、スマートフォンなど、さまざまなデバイスで快適に閲覧できるようにデザインされています。どのデバイスを使用していても、レイアウトが自動的に調整され、最適な表示を提供します。",
         "description": "説明",
-        "technologies": "使用技術"
+        "technologies": "使用技術",
+        "youtube": "Youtube",
+        "viewLive": "プロジェクトを見る",
+        "github": "Github",
+        "videoDemoLabel": "デモ動画",
+        "metaTitle": "プロジェクト",
+        "metaDescription": "ジェラルド・カンザラによる個人プロジェクトの紹介。モバイルアプリ、ウェブアプリ、機械学習プロジェクトなどを含みます。"
     },
     "NavBarText": {
         "projects": "個人プロジェクト",
-        "home": "ホーム"
+        "home": "ホーム",
+        "about": "自己紹介",
+        "contact": "お問い合わせ"
     },
     "LanguageSwitcher": {
         "language": "言語"
+    },
+    "AboutPage": {
+        "title": "自己紹介",
+        "bioHeading": "自己PR",
+        "bio": "ロンドン大学でコンピュータサイエンス（情報科学）の学士号を取得したソフトウェアエンジニアです。新しい知識や技術を学ぶことに意欲的で、変化する環境にも柔軟に対応しながら、必要なスキルを迅速に習得できることを強みとしています。学術プロジェクトおよび個人プロジェクトを通じて、JavaScript、TypeScript、React、React Native、Python を用いた開発経験を積んできました。大学の研究プロジェクトでは、Python（Pandas、NumPy、Scikit-Learn）、REST・GraphQL API、SQL を活用したデータ分析ツールの開発に携わりました。2026 年 6 月には、経済産業省認定「第四次産業革命スキル習得講座（Re スキル講座）」であるキカガクの AI・DX 推進人材育成プログラムを修了し、データ分析、機械学習、深層学習、自然言語処理を体系的に学びました。英語講師としての経験を通じて、相手の理解度に合わせて分かりやすく伝える力やコミュニケーション能力、課題解決力も培っており、これらの力をチーム開発にも活かしていきたいと考えています。",
+        "educationHeading": "学歴",
+        "educationCs": "コンピュータサイエンス（情報科学）学士 — ロンドン大学（2020年 〜 2024年）",
+        "educationEd": "教育学士 — グレート・ジンバブエ大学（2014年 〜 2017年）",
+        "experienceHeading": "職歴",
+        "experienceBerlitzRole": "英語講師 — ベルリッツ、大阪",
+        "experienceBerlitzDates": "2024年10月 〜 現在",
+        "experienceBerlitzDescription": "大学レベルから社会人まで、ビジネス英語や英会話の指導を担当。法人向け研修も実施しています。受講生一人ひとりの目標に合わせた指導やフィードバック、異文化間コミュニケーションを通じて、分かりやすく伝える力とチームでの連携力を培いました。",
+        "experienceIttoRole": "英語講師 — イッティージャポン株式会社、大阪",
+        "experienceIttoDates": "2019年5月 〜 2024年9月",
+        "experienceIttoDescription": "小学生から高校生までを対象とした英会話指導を担当。レッスン計画の作成、学習進捗管理、保護者や外国人講師との連携を通じて、課題を分解し分かりやすく伝える力を磨きました。",
+        "certificationsHeading": "資格",
+        "certificationDegree": "コンピュータサイエンス（情報科学）学士 — ロンドン大学（2024年）",
+        "certificationJlpt": "日本語能力試験 JLPT N2（2024年12月）",
+        "certificationKikagaku": "キカガク AI・DX 推進人材育成コース — 経済産業省認定「第四次産業革命スキル習得講座（Re スキル講座）」（2026年6月）",
+        "skillsHeading": "スキル",
+        "skillsLanguages": "言語・フレームワーク: JavaScript, TypeScript, Python, React, React Native",
+        "skillsData": "データ: Pandas, NumPy, Scikit-learn, SQL",
+        "skillsTools": "API・ツール: REST, GraphQL, Git/GitHub",
+        "metaTitle": "自己紹介",
+        "metaDescription": "ジェラルド・カンザラの経歴 — コンピュータサイエンス（情報科学）を専攻し、英語講師としての経験も持つソフトウェアエンジニア。分かりやすいコミュニケーションと学び続ける姿勢を大切にしています。"
+    },
+    "ContactPage": {
+        "title": "お問い合わせ",
+        "intro": "メールにてお気軽にご連絡ください。",
+        "emailLabel": "メールを送る",
+        "metaTitle": "お問い合わせ",
+        "metaDescription": "メールでジェラルド・カンザラにご連絡ください。"
     }
 }

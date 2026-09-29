@@ -1,7 +1,13 @@
 {
+    "Metadata": {
+        "title": "Gerald Kanzara — Software Engineer",
+        "description": "Portfolio of Gerald Kanzara, a software engineer who enjoys problem solving and turning ideas into real, working solutions."
+    },
     "HomePage": {
         "title": "Software Engineer",
-        "intro": "I enjoy problem solving and turning ideas into real, working solutions."
+        "intro": "I studied Computer Science at the University of London and earned my degree there. My focus is on Python, JavaScript, TypeScript, React, and React Native, alongside data analysis and AI/machine learning. I love picking up new technologies, and I'm always looking to grow further as an engineer.",
+        "metaTitle": "Home",
+        "metaDescription": "Gerald Kanzara's portfolio home page — a software engineer specializing in web and mobile development."
     },
     "ProjectsPage": {
         "title": "Personal Projects",
@@ -12,13 +18,53 @@
         "foodAppDescript": "The Food App is a small project built with React Native in Expo. It simulates the user experience of selecting a restaurant and viewing its menu. The app provides a simple and intuitive interface for browsing restaurant options and exploring available dishes",
         "portfolioAppDescript": "This is the website you are currently visiting. I built it using modern web technologies to ensure a smooth and responsive experience. It is designed to be fully accessible and user-friendly on a variety of devices, including desktops, laptops, tablets, and smartphones. No matter what device you are using, the layout adjusts seamlessly to provide an optimal viewing experience",
         "description": "Descrition",
-        "technologies": "Technologies"
+        "technologies": "Technologies",
+        "youtube": "Youtube",
+        "viewLive": "View the project live",
+        "github": "Github",
+        "videoDemoLabel": "Demo video",
+        "metaTitle": "Projects",
+        "metaDescription": "A selection of personal projects by Gerald Kanzara, including mobile apps, web apps, and machine learning projects."
     },
     "NavBarText": {
         "projects": "Personal Projects",
-        "home": "Home"
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact"
     },
     "LanguageSwitcher": {
         "language": "language"
+    },
+    "AboutPage": {
+        "title": "About Me",
+        "bioHeading": "Profile",
+        "bio": "I'm a software engineer with a BSc in Computer Science from the University of London, driven by a strong appetite for learning and adapting quickly to new tools and environments. Through academic and personal projects I've built experience with JavaScript, TypeScript, React, React Native, and Python, including a university research project applying Python (Pandas, NumPy, Scikit-learn), REST and GraphQL APIs, and SQL to data analysis. In June 2026 I completed Kikagaku's AI/DX Human Resource Development Program, a METI-certified \"Re-skilling\" course covering data analysis, machine learning, deep learning, and natural language processing. Years spent teaching English also shaped how I work — explaining complex ideas clearly, communicating across cultures, and solving problems on the fly — skills I bring directly into team-based software development.",
+        "educationHeading": "Education",
+        "educationCs": "BSc Computer Science — University of London (2020 – 2024)",
+        "educationEd": "BEd Education — Great Zimbabwe University (2014 – 2017)",
+        "experienceHeading": "Work Experience",
+        "experienceBerlitzRole": "English Instructor — Berlitz, Osaka",
+        "experienceBerlitzDates": "Oct 2024 – Present",
+        "experienceBerlitzDescription": "Teaching business and conversational English to students ranging from university level to working professionals, including corporate training programs. Tailoring instruction to individual goals, giving structured feedback, and communicating across cultures built the same skills I apply to explaining technical work and collaborating on a team.",
+        "experienceIttoRole": "English Teacher — ITTI Japan, Osaka",
+        "experienceIttoDates": "May 2019 – Sep 2024",
+        "experienceIttoDescription": "Taught English conversation to students from elementary through high school age, planning lessons, tracking progress, and coordinating with parents and international staff. Sharpened my ability to break problems down and communicate solutions clearly to different audiences.",
+        "certificationsHeading": "Certifications",
+        "certificationDegree": "BSc Computer Science — University of London (2024)",
+        "certificationJlpt": "JLPT N2 — Japanese Language Proficiency Test (Dec 2024)",
+        "certificationKikagaku": "AI/DX Human Resource Development Program, Kikagaku — METI-certified \"Re-skilling\" course (Jun 2026)",
+        "skillsHeading": "Skills",
+        "skillsLanguages": "Languages & frameworks: JavaScript, TypeScript, Python, React, React Native",
+        "skillsData": "Data: Pandas, NumPy, Scikit-learn, SQL",
+        "skillsTools": "APIs & tools: REST, GraphQL, Git/GitHub",
+        "metaTitle": "About",
+        "metaDescription": "Gerald Kanzara's background — a Computer Science graduate and former English teacher building software with a focus on clear communication and continuous learning."
+    },
+    "ContactPage": {
+        "title": "Contact",
+        "intro": "Feel free to reach out by email.",
+        "emailLabel": "Email me",
+        "metaTitle": "Contact",
+        "metaDescription": "Get in touch with Gerald Kanzara by email."
     }
 }

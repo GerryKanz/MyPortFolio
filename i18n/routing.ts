@@ -15,6 +15,14 @@ export const routing = defineRouting({
         '/': {
             en: '/home',
             jp: '/ホム'
+        },
+        '/about': {
+            en: '/about',
+            jp: '/について'
+        },
+        '/contact': {
+            en: '/contact',
+            jp: '/お問い合わせ'
         }
 
     }

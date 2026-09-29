@@ -24,6 +24,14 @@
     width: 30px;
     text-align: center;
     transition: 0.4s ease;
+    border: none;
+    font: inherit;
+    padding: 4px 0;
+}
+
+.selectOption[aria-current="true"] {
+    background-color: #eebd63;
+    font-weight: bold;
 }
 
 .selectOption:hover {

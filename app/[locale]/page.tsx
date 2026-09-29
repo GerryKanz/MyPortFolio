@@ -1,20 +1,37 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useTranslations } from 'next-intl';
-// import { Link } from '@/i18n/navigation';
+import { getTranslations } from 'next-intl/server';
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const [t, site] = await Promise.all([
+    getTranslations({ locale, namespace: "HomePage" }),
+    getTranslations({ locale, namespace: "Metadata" })
+  ]);
+
+  return {
+    title: `${t("metaTitle")} — ${site("title")}`,
+    description: t("metaDescription")
+  };
+}
 
 export default function Home() {
 
   const t = useTranslations('HomePage');
 
   const skillsIcons = [
-    '/html-5.png',
-    '/css-3.png',
-    '/js.png',
-    '/physics.png',
-    '/python.png',
-    '/github.png'
-
+    { src: '/html-5.png', alt: 'HTML5' },
+    { src: '/css-3.png', alt: 'CSS3' },
+    { src: '/js.png', alt: 'JavaScript' },
+    { src: '/physics.png', alt: 'Physics' },
+    { src: '/python.png', alt: 'Python' },
+    { src: '/github.png', alt: 'GitHub' }
   ]
 
   return (
@@ -31,15 +48,6 @@ export default function Home() {
               <p>{t('intro')}</p>
               <p className={styles.name}>Gerald Kanzara</p>
             </div>
-
-            <div className={styles.IntroImg}>
-              <Image
-                width={250}
-                height={250}
-                src='/geraldkan.jpg'
-                alt="Gerald's Image"
-              />
-            </div>
           </div>
         </div>
         <div className={styles.skillsIcons}>
@@ -49,8 +57,8 @@ export default function Home() {
               key={index}
               width={30}
               height={30}
-              src={icon}
-              alt={"Skill Icon"}
+              src={icon.src}
+              alt={icon.alt}
               className={styles.SkillIcon}
             />
           ))}

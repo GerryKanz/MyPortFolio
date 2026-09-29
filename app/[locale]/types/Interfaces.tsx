@@ -13,12 +13,9 @@ interface links {
     'expoLink'?: string
     'github'?: string
     'youtubeLinkEmbedded'?: string
-}
-
-export interface embededLink {
-    handleClick?: (vidClicked: () => string | undefined) => void;
+    'videoFile'?: string
 }
 
 export type projects = project[]
 
-export type Locale = (typeof routing.defaultLocale)
+export type Locale = (typeof routing.locales)[number]

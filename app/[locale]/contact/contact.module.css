@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.contactCard {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 65%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.emailLink {
+    font-weight: bold;
+    color: #003366;
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .contactCard {
+        width: 90%;
+    }
+}
