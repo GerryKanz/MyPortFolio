@@ -2,7 +2,7 @@ import { routing } from "@/i18n/routing"
 
 export interface project {
     'name': string,
-    'imagePath': string,
+    'imagePath'?: string,
     'discription': string,
     'technologies': string,
     'projectLinks'?: links

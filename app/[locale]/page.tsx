@@ -35,11 +35,10 @@ export default function Home() {
   ]
 
   return (
-    <>
+    <div className={styles.homeCenter}>
       <div className="pageTitle">
         <h1>{t('title')}</h1>
       </div>
-
 
       <div className={styles.container}>
         <div className={styles.introContainer}>
@@ -64,6 +63,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

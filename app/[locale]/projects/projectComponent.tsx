@@ -25,14 +25,16 @@ export default function Project({ id, ...props }: project & { id?: string }) {
                 </div>
                 <div className={styles.projectDetail}>
 
-                    <div className={styles.projectImgContainer}>
-                        <Image
-                            src={props.imagePath}
-                            alt={`${props.name} screenshot`}
-                            width={200}
-                            height={200}
-                        />
-                    </div>
+                    {props.imagePath ?
+                        <div className={styles.projectImgContainer}>
+                            <Image
+                                src={props.imagePath}
+                                alt={`${props.name} screenshot`}
+                                fill
+                                style={{ objectFit: 'contain' }}
+                            />
+                        </div>
+                        : null}
 
                     <div>
 
