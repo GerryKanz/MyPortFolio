@@ -28,6 +28,10 @@
 .projectImgContainer {
     display: flex;
     justify-content: center;
+    position: relative;
+    width: clamp(220px, 30vw, 340px);
+    height: clamp(220px, 30vw, 340px);
+    flex-shrink: 0;
 }
 
 .description {

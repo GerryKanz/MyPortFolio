@@ -76,6 +76,16 @@ export default function ProjectsData() {
             projectLinks: {
                 github: 'https://github.com/GerryKanz/Final-project-image-classification-model/blob/main/final_project_ML.ipynb'
             }
+        },
+        {
+            name: 'OtoDecks',
+
+            imagePath: '/otoDecksApp.png',
+            discription: t('otoDecksDescript'),
+            technologies: 'C++, JUCE Framework',
+            projectLinks: {
+                videoFile: '/otoDecksDemo.mp4'
+            }
         }
     ]
     return projects
