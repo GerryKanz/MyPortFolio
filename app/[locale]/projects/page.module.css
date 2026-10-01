@@ -51,17 +51,19 @@
     .pageLayout {
         flex-direction: column;
         width: 90%;
+        margin-top: 0;
         margin-left: auto;
         margin-right: auto;
     }
 
     .sidebar {
-        position: sticky;
-        left: auto;
+        position: fixed;
+        left: 0;
+        right: 0;
         top: var(--nav-height, 90px);
-        width: calc(1000% / 9);
-        margin-left: calc(-100% / 18);
-        margin-right: calc(-100% / 18);
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         height: auto;
         max-height: 73px;
         border-radius: 0;
@@ -71,13 +73,14 @@
         gap: 4px;
         padding: 8px 10px;
         overflow-y: auto;
-        margin-bottom: 20px;
+        margin-bottom: 0;
         z-index: 500;
     }
 
     .projectsContainer {
         width: 100%;
         gap: 2px;
+        margin-top: var(--sidebar-offset, 140px);
     }
 
     .sidebarLink {

@@ -17,8 +17,9 @@ export default function ScrollOffsetLayout({ pageLayoutClassName, sidebarClassNa
             const el = sidebarRef.current
             if (!el) return
             const top = parseFloat(getComputedStyle(el).top) || 0
-            const bottom = top + el.getBoundingClientRect().height
-            document.documentElement.style.setProperty("--sidebar-scroll-offset", `${bottom + 20}px`)
+            const height = el.getBoundingClientRect().height
+            document.documentElement.style.setProperty("--sidebar-offset", `${height}px`)
+            document.documentElement.style.setProperty("--sidebar-scroll-offset", `${top + height + 20}px`)
         }
 
         updateOffset()
