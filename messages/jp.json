@@ -11,6 +11,20 @@
     },
     "ProjectsPage": {
         "title": "個人プロジェクト",
+        "nailSalonName": "ネイルサロン予約アプリ（ベータ版）",
+        "portfolioAppName": "ポートフォリオサイト",
+        "weatherAppName": "天気アプリ（ベータ版）",
+        "foodAppName": "フードアプリ（ベータ版）",
+        "calculatorName": "電卓アプリ（ベータ版）",
+        "birdClassificationName": "鳥類分類モデル（ディープニューラルネットワーク・ベータ版）",
+        "otoDecksName": "OtoDecks",
+        "nailSalonNavLabel": "ネイルサロンアプリ",
+        "portfolioAppNavLabel": "ポートフォリオ",
+        "weatherAppNavLabel": "天気アプリ",
+        "foodAppNavLabel": "フードアプリ",
+        "calculatorNavLabel": "電卓",
+        "birdClassificationNavLabel": "鳥類分類モデル",
+        "otoDecksNavLabel": "OtoDecks",
         "nailSalonDescript": "これは React Native で構築されたモバイルアプリケーションで、ネイルサロンの予約プロセスを効率化します。ユーザーはアカウントを作成し、予約を入れ、予約を管理し、必要に応じてキャンセルすることができます。ユーザーエクスペリエンスとモダンな UI デザインに重点を置いて開発されています",
         "calculator": "このプロジェクトは、簡単な計算を解く機能を備えた電卓アプリです。スマートフォンのウィジェットにインスパイアされています。このプロジェクトでは、特にレスポンシブデザインに注力しました。",
         "weatherAppDescript": "このアプリはWeather APIからリアルタイムの天気データを取得します。ユーザーは都市や国を検索し、気温、湿度、風速、天気の状態などの詳細な天気情報を確認できます。このアプリはシンプルで使いやすいインターフェースを備えており、検索した場所の天気予報を素早く表示できます。APIを使用してデータを動的に取得するため、常に最新の情報が表示されます",
@@ -31,7 +45,9 @@
         "projects": "個人プロジェクト",
         "home": "ホーム",
         "about": "自己紹介",
-        "contact": "お問い合わせ"
+        "contact": "お問い合わせ",
+        "openMenu": "メニューを開く",
+        "closeMenu": "メニューを閉じる"
     },
     "LanguageSwitcher": {
         "language": "言語"

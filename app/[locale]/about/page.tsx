@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import styles from "./about.module.css";
+import ScrollOffsetLayout from "../scrollOffsetLayout";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -31,15 +32,16 @@ export default function About() {
 
   return (
     <>
-      <div className={styles.pageLayout}>
-        <nav className={styles.sidebar} aria-label={t("title")}>
-          {sections.map((section) => (
-            <a key={section.id} className={styles.sidebarLink} href={`#${section.id}`}>
-              {section.label}
-            </a>
-          ))}
-        </nav>
-
+      <ScrollOffsetLayout
+        pageLayoutClassName={styles.pageLayout}
+        sidebarClassName={styles.sidebar}
+        ariaLabel={t("title")}
+        sidebarLinks={sections.map((section) => (
+          <a key={section.id} className={styles.sidebarLink} href={`#${section.id}`}>
+            {section.label}
+          </a>
+        ))}
+      >
         <div className={styles.cardsContainer}>
           <div id="bio" className={styles.card}>
             <h2 className={styles.sectionHeading}>{t("bioHeading")}</h2>
@@ -102,7 +104,7 @@ export default function About() {
             </ul>
           </div>
         </div>
-      </div>
+      </ScrollOffsetLayout>
     </>
   );
 }

@@ -11,6 +11,20 @@
     },
     "ProjectsPage": {
         "title": "Personal Projects",
+        "nailSalonName": "Nail Salon Booking App (Beta)",
+        "portfolioAppName": "Portfolio site",
+        "weatherAppName": "Weather App (Beta)",
+        "foodAppName": "Food App (Beta)",
+        "calculatorName": "Calculator (Beta)",
+        "birdClassificationName": "Bird Classication Model Deep Neural Network (Beta)",
+        "otoDecksName": "OtoDecks",
+        "nailSalonNavLabel": "Nail Salon App",
+        "portfolioAppNavLabel": "Portfolio",
+        "weatherAppNavLabel": "Weather App",
+        "foodAppNavLabel": "Food App",
+        "calculatorNavLabel": "Calculator",
+        "birdClassificationNavLabel": "Bird Classifier",
+        "otoDecksNavLabel": "OtoDecks",
         "nailSalonDescript": "This is a mobile application built with React Native. It streamlines the appointment scheduling process for a nail salon. Users can create an account, book appointments, manage their bookings, and cancel when necessary. It is built with a focus on user experience and modern UI design",
         "calculator": "This project is a calculator app with the functionality that help solve simple math. Its inspired by widgets found on smartphones. In this project I was more focused on responsive design",
         "weatherAppDescript": "I have created a weather app that retrieves real-time weather data from the Weather API. The app allows users to search for any city or country of their choice and displays detailed weather information, including temperature, humidity, wind speed, and weather conditions. The app features a clean and user-friendly interface, making it easy to enter a location and quickly view the weather forecast. The data is fetched dynamically using API calls, ensuring up-to-date information.",
@@ -31,7 +45,9 @@
         "projects": "Personal Projects",
         "home": "Home",
         "about": "About",
-        "contact": "Contact"
+        "contact": "Contact",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu"
     },
     "LanguageSwitcher": {
         "language": "language"

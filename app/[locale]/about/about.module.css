@@ -134,14 +134,19 @@
     .sidebar {
         position: sticky;
         left: auto;
-        top: 90px;
-        width: 100%;
+        top: var(--nav-height, 90px);
+        width: calc(1000% / 9);
+        margin-left: calc(-100% / 18);
+        margin-right: calc(-100% / 18);
         height: auto;
-        border-radius: 10px;
+        max-height: 73px;
+        border-radius: 0;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
         flex-direction: row;
-        overflow-x: auto;
-        overflow-y: visible;
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 8px 10px;
+        overflow-y: auto;
         margin-bottom: 20px;
         z-index: 500;
     }
@@ -152,14 +157,16 @@
     }
 
     .sidebarLink {
-        white-space: nowrap;
+        white-space: normal;
+        background-color: #ffffff;
+        border: 1px solid rgb(191, 191, 191);
+        font-size: 10px;
+        padding: 2px 5px;
     }
 
     .sidebarLink:not(:last-child) {
-        padding-bottom: 8px;
-        padding-right: 16px;
+        padding-bottom: 2px;
         border-bottom: none;
-        border-right: 1px solid rgb(191, 191, 191);
     }
 
     .profileRow {
@@ -173,5 +180,20 @@
 
     .experienceHeader {
         flex-direction: column;
+    }
+
+    .card {
+        scroll-margin-top: var(--sidebar-scroll-offset, 160px);
+    }
+}
+
+@media (max-width: 640px) {
+    .card {
+        padding: 20px;
+    }
+
+    .profileImage {
+        width: 130px;
+        height: 130px;
     }
 }

@@ -6,7 +6,8 @@ export default function ProjectsData() {
     const projects = [
 
         {
-            name: 'Nail Salon Booking App (Beta)',
+            name: t("nailSalonName"),
+            navLabel: t("nailSalonNavLabel"),
 
             imagePath: '/theNailSalonApp.png',
             discription: t("nailSalonDescript"),
@@ -20,7 +21,8 @@ export default function ProjectsData() {
         },
 
         {
-            name: 'Portfolio site',
+            name: t("portfolioAppName"),
+            navLabel: t("portfolioAppNavLabel"),
 
             imagePath: '/portfoliosite.png',
             discription: t("portfolioAppDescript"),
@@ -32,7 +34,8 @@ export default function ProjectsData() {
         },
 
         {
-            name: 'Weather App (Beta)',
+            name: t("weatherAppName"),
+            navLabel: t("weatherAppNavLabel"),
 
             imagePath: '/weatheapp.png',
             discription: t("weatherAppDescript"),
@@ -44,7 +47,8 @@ export default function ProjectsData() {
             }
         },
         {
-            name: 'Food App (Beta)',
+            name: t("foodAppName"),
+            navLabel: t("foodAppNavLabel"),
 
             imagePath: '/foodAppImg.png',
             discription: t('foodAppDescript'),
@@ -56,7 +60,8 @@ export default function ProjectsData() {
 
         },
         {
-            name: 'Calculator (Beta)',
+            name: t("calculatorName"),
+            navLabel: t("calculatorNavLabel"),
 
             imagePath: '/calculatorApp.png',
             discription: t("calculator"),
@@ -68,7 +73,8 @@ export default function ProjectsData() {
 
         },
         {
-            name: 'Bird Classication Model Deep Neural Network (Beta)',
+            name: t("birdClassificationName"),
+            navLabel: t("birdClassificationNavLabel"),
 
             imagePath: '/BirdClassicationModel.png',
             discription: t('birdClassificationDescript'),
@@ -78,7 +84,8 @@ export default function ProjectsData() {
             }
         },
         {
-            name: 'OtoDecks',
+            name: t("otoDecksName"),
+            navLabel: t("otoDecksNavLabel"),
 
             imagePath: '/otoDecksApp.png',
             discription: t('otoDecksDescript'),

@@ -2,6 +2,7 @@ import { routing } from "@/i18n/routing"
 
 export interface project {
     'name': string,
+    'navLabel': string,
     'imagePath'?: string,
     'discription': string,
     'technologies': string,

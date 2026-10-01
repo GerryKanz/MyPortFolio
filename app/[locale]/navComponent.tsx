@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation"
 import styles from "./page.module.css"
 import { useTranslations } from "next-intl"
 import LangSwitcher from "./langugeSwitcher"
+import MobileNav from "./mobileNav"
 
 export default function NavBar() {
     const t = useTranslations("NavBarText")
@@ -31,6 +32,8 @@ export default function NavBar() {
                     <Link href={'/contact'} className={styles.bottomLink}>{t("contact")}</Link>
                     <LangSwitcher />
                 </div>
+
+                <MobileNav />
             </div>
         </nav>
     </div>
