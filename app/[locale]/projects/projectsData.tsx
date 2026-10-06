@@ -25,7 +25,7 @@ export default function ProjectsData() {
 
             imagePath: '/theNailSalonApp.png',
             discription: t("nailSalonDescript"),
-            technologies: 'React Native, JavaScript, CSS, Clerk, GraphQL',
+            technologies: 'React Native (Expo), JavaScript, Clerk, GraphQL (Hygraph)',
             projectLinks: {
                 videoFile: '/nailSalonDemo.mp4',
                 expoLink: 'https://expo.dev/preview/update?message=v1.0.3%20Beta&updateRuntimeVersion=1.0.0&createdAt=2025-03-03T09%3A30%3A00.895Z&slug=exp&projectId=6f5a2d47-8e58-4c17-990b-50b1bb6214f5&group=7a96b647-69b3-43cf-a307-416a135fef2f',
@@ -40,7 +40,7 @@ export default function ProjectsData() {
 
             imagePath: '/weatherAppSnapshot.png',
             discription: t("weatherAppDescript"),
-            technologies: 'Next.js (React), TypeScript, Tailwind',
+            technologies: 'Next.js (React), TypeScript, Tailwind CSS, OpenWeatherMap API',
             projectLinks: {
                 videoFile: '/weatherAppDemo.mov',
                 youtubeLink: 'https://youtu.be/iBS_5fEgYm8',
@@ -55,7 +55,7 @@ export default function ProjectsData() {
 
             imagePath: '/otoDecksApp.png',
             discription: t('otoDecksDescript'),
-            technologies: 'C++, JUCE Framework',
+            technologies: 'C++, JUCE Framework, CoreAudio, XML',
             projectLinks: {
                 videoFile: '/otoDecksDemo.mp4'
             }
