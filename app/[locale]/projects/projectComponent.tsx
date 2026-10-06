@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { project } from '../types/Interfaces';
 import styles from './project.module.css'
 import VideoEmbed from './VideoEmbed'
+import SelfHostedVideo from './SelfHostedVideo'
 
 import { useTranslations } from 'next-intl';
 
@@ -61,33 +61,6 @@ export default function Project({ id, ...props }: project & { id?: string }) {
                                     </div>
                                     : null}
 
-                                {props.projectLinks?.expoLink ?
-                                    <div className={styles.projectLinksIcons}>
-                                        <Link className={styles.link} href={props.projectLinks.expoLink}>
-                                            <p>{t("viewLive")}</p>
-                                            <span className={styles.linkArrow}><HiOutlineArrowSmRight /></span>
-                                        </Link>
-                                    </div> :
-                                    null
-                                }
-
-                                {props.projectLinks?.github ?
-                                    <div className={styles.projectLinksIcons}>
-                                        <Link style={{ display: 'flex', alignItems: 'center', gap: '3px' }} href={props.projectLinks?.github}>
-                                            <Image
-                                                width={25}
-                                                height={25}
-                                                src='/github-brands-solid.svg'
-                                                alt="Github"
-                                            />
-                                            <p>{t("github")}</p>
-                                        </Link>
-
-                                    </div> : null
-                                }
-
-
-
                             </div>
                         </div>
 
@@ -105,13 +78,10 @@ export default function Project({ id, ...props }: project & { id?: string }) {
                     : hasVideoFile ?
                         <div className={styles.embedContainer}>
                             <h3 className={styles.embedHeading}>{t("videoDemoLabel")}</h3>
-                            <video
-                                controls
-                                className={styles.selfHostedVideo}
-                                src={props.projectLinks!.videoFile}
-                            >
-                                {`${props.name} demo video`}
-                            </video>
+                            <SelfHostedVideo
+                                src={props.projectLinks!.videoFile!}
+                                title={`${props.name} demo video`}
+                            />
                         </div>
                         : null}
             </div>

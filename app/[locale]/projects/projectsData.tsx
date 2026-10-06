@@ -6,6 +6,20 @@ export default function ProjectsData() {
     const projects = [
 
         {
+            name: t("flowerArrangementName"),
+            navLabel: t("flowerArrangementNavLabel"),
+
+            imagePath: '/petalPaletteApp.png',
+            discription: t("flowerArrangementDescript"),
+            technologies: 'Python, FastAPI, Next.js (React), TypeScript, Tailwind, RAG, Ollama LLM, Docker',
+            projectLinks: {
+                videoFile: '/petalPaletteDemo.mov',
+                github: 'https://github.com/GerryKanz/DIYBouquetMaker'
+            }
+
+        },
+
+        {
             name: t("nailSalonName"),
             navLabel: t("nailSalonNavLabel"),
 
@@ -21,6 +35,33 @@ export default function ProjectsData() {
         },
 
         {
+            name: t("weatherAppName"),
+            navLabel: t("weatherAppNavLabel"),
+
+            imagePath: '/weatherAppSnapshot.png',
+            discription: t("weatherAppDescript"),
+            technologies: 'Next.js (React), TypeScript, Tailwind',
+            projectLinks: {
+                videoFile: '/weatherAppDemo.mov',
+                youtubeLink: 'https://youtu.be/iBS_5fEgYm8',
+                expoLink: 'https://weather-app-git-main-gerald-kanzaras-projects.vercel.app/',
+                github: 'https://github.com/GerryKanz/Weather-app/tree/main/app'
+            }
+        },
+
+        {
+            name: t("otoDecksName"),
+            navLabel: t("otoDecksNavLabel"),
+
+            imagePath: '/otoDecksApp.png',
+            discription: t('otoDecksDescript'),
+            technologies: 'C++, JUCE Framework',
+            projectLinks: {
+                videoFile: '/otoDecksDemo.mp4'
+            }
+        },
+
+        {
             name: t("portfolioAppName"),
             navLabel: t("portfolioAppNavLabel"),
 
@@ -33,19 +74,6 @@ export default function ProjectsData() {
 
         },
 
-        {
-            name: t("weatherAppName"),
-            navLabel: t("weatherAppNavLabel"),
-
-            imagePath: '/weatheapp.png',
-            discription: t("weatherAppDescript"),
-            technologies: 'Next.js (React), TypeScript, Tailwind',
-            projectLinks: {
-                youtubeLink: 'https://youtu.be/iBS_5fEgYm8',
-                expoLink: 'https://weather-app-git-main-gerald-kanzaras-projects.vercel.app/',
-                github: 'https://github.com/GerryKanz/Weather-app/tree/main/app'
-            }
-        },
         {
             name: t("foodAppName"),
             navLabel: t("foodAppNavLabel"),
@@ -81,17 +109,6 @@ export default function ProjectsData() {
             technologies: 'Python, TensorFlow Keras Library, MatplotLib, Pandas and Numpy',
             projectLinks: {
                 github: 'https://github.com/GerryKanz/Final-project-image-classification-model/blob/main/final_project_ML.ipynb'
-            }
-        },
-        {
-            name: t("otoDecksName"),
-            navLabel: t("otoDecksNavLabel"),
-
-            imagePath: '/otoDecksApp.png',
-            discription: t('otoDecksDescript'),
-            technologies: 'C++, JUCE Framework',
-            projectLinks: {
-                videoFile: '/otoDecksDemo.mp4'
             }
         }
     ]
