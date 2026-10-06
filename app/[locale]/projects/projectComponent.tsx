@@ -81,6 +81,7 @@ export default function Project({ id, ...props }: project & { id?: string }) {
                             <SelfHostedVideo
                                 src={props.projectLinks!.videoFile!}
                                 title={`${props.name} demo video`}
+                                poster={props.imagePath}
                             />
                         </div>
                         : null}

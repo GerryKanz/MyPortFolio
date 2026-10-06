@@ -13,7 +13,7 @@ export default function ProjectsData() {
             discription: t("flowerArrangementDescript"),
             technologies: 'Python, FastAPI, Next.js (React), TypeScript, Tailwind, RAG, Ollama LLM, Docker',
             projectLinks: {
-                videoFile: '/petalPaletteDemo.mov',
+                videoFile: '/petalPaletteDemo.mp4',
                 github: 'https://github.com/GerryKanz/DIYBouquetMaker'
             }
 
@@ -42,7 +42,7 @@ export default function ProjectsData() {
             discription: t("weatherAppDescript"),
             technologies: 'Next.js (React), TypeScript, Tailwind CSS, OpenWeatherMap API',
             projectLinks: {
-                videoFile: '/weatherAppDemo.mov',
+                videoFile: '/weatherAppDemo.mp4',
                 youtubeLink: 'https://youtu.be/iBS_5fEgYm8',
                 expoLink: 'https://weather-app-git-main-gerald-kanzaras-projects.vercel.app/',
                 github: 'https://github.com/GerryKanz/Weather-app/tree/main/app'

@@ -24,6 +24,9 @@
 .DS_Store
 *.pem
 
+# stray screen recordings (not web-ready assets)
+/Screen Recording*.mov
+
 # debug
 npm-debug.log*
 yarn-debug.log*
