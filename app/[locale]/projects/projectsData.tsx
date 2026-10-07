@@ -11,7 +11,7 @@ export default function ProjectsData() {
 
             imagePath: '/petalPaletteApp.png',
             discription: t("flowerArrangementDescript"),
-            technologies: 'Python, FastAPI, Next.js (React), TypeScript, Tailwind, RAG, Ollama LLM, Docker',
+            technologies: 'Python, FastAPI, Next.js (React), TypeScript, Tailwind, RAG, Ollama LLM',
             projectLinks: {
                 videoFile: '/petalPaletteDemo.mp4',
                 github: 'https://github.com/GerryKanz/DIYBouquetMaker'
